@@ -1,58 +1,44 @@
 .todo-app {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header,
 .main {
-    max-width: 60%;
-    text-align: center;
+  max-width: 60%;
+  text-align: center;
 }
 
 h1 {
-    font-size: 100px;
-    font-weight: 100;
-    text-align: center;
-    color: rgba(175, 47, 47, 0.5);
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.5);
 }
 
 .entry-field {
-    display: block;
-    flex-direction: row;
+  display: block;
+  flex-direction: row;
 }
 
 .new-todo {
-    padding: 16px 16px 16px 50px;
-    border: solid 1px #000000;
-    background: rgba(0, 0, 0, 0.003);
-    font-size: 24px;
+  padding: 16px 16px 16px 50px;
+  border: solid 1px #000000;
+  background: rgba(0, 0, 0, 0.003);
+  font-size: 24px;
 }
 
 .btn-add-todo {
-    font-size: 24px;
-    padding: 16px;
-    border: solid 1px #000000;
-    background-color: rgba(88, 141, 240, 0.3);
+  font-size: 24px;
+  padding: 16px;
+  border: solid 1px #000000;
+  background-color: rgba(88, 141, 240, 0.3);
 }
 
 .todo-list {
-    list-style: none;
-}
-
-.item {
-    border: solid 1px #000000;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    width: 430px;
-    padding-left: 16px;
-}
-
-.delete {
-    background-color: #ffffff;
-    color: rgba(175, 47, 47, 0.8);
-    border: none;
-    font-size: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 5px;
 }

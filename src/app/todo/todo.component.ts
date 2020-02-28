@@ -1,28 +1,26 @@
-import { Component } from '@angular/core';
-import { TodoService } from './todo.service';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-todo',
-  templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.css']
+  selector: "app-todo",
+  templateUrl: "./todo.component.html",
+  styleUrls: ["./todo.component.css"]
 })
 export class TodoComponent {
-  newTodo: string;
-  todos = [];
+  public newTodo: string;
+  public todoItems: string[] = [];
 
-constructor(todoService: TodoService) { }
+  constructor() {}
 
   addTodo(): void {
-    this.todos.push(this.newTodo);
+    this.todoItems.push(this.newTodo);
     this.remove();
   }
 
   remove(): void {
-    this.newTodo = '';
+    this.newTodo = "";
   }
 
-  deleteTodo(i): void {
-this.todos.splice(i, 1);
+  deleteTodo(i: number): void {
+    this.todoItems.splice(i, 1);
   }
-
 }

@@ -1,0 +1,9 @@
+<li>
+  <div class="item">
+    <div>
+      <input type="checkbox" id="checked_{{index}}" [(ngModel)]='isChecked'>
+      <label [class.isCheckedClass]='isChecked' for="checked_{{index}}">{{todo}}</label></div>
+    <button class="delete" (click)='event.emit()'>x</button>
+  </div>
+
+</li>

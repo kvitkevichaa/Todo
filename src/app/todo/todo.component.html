@@ -1,0 +1,20 @@
+<section class="todo-app">
+    <section class="header"> 
+        <h1>Todo</h1>
+        <div class="entry-field">
+            <input class="new-todo" placeholder="What needs to be done?" [(ngModel)]="newTodo" (keyup.enter)='addTodo()' autofocus>
+            <button class="btn-add-todo" (click)='addTodo()' type="button">Add</button>
+        </div>
+    </section>
+
+    <section class="main">
+        <ul class="todo-list">
+            <li *ngFor="let todo of todos; let i = index">
+            <div class="item">
+                <label for="">{{todo}}</label>
+                <button class="delete" (click)='deleteTodo(i)'>x</button>
+            </div>
+            </li>
+        </ul>
+    </section>
+</section>
